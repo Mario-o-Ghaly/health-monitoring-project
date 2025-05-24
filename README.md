@@ -1,5 +1,22 @@
 # Arduino Healthcare Monitoring System — Code Documentation
 
+## 📑 Table of Contents
+
+1. [Libraries and Sensor Setup](#1-libraries-and-sensor-setup)  
+2. [Pin Configuration and Constants](#2-pin-configuration-and-constants)  
+3. [Global Buffers and Variables](#3-global-buffers-and-variables)  
+4. [Function: `readTemperatureLowLevel()`](#4-function-readtemperaturelowlevel)  
+5. [Median Filtering Functions](#5-median-filtering-functions)  
+6. [`setup()` Function](#6-setup-function)  
+7. [`loop()` Function](#7-loop-function)  
+   - [7.1 Bluetooth Command Parsing](#71-bluetooth-command-parsing)  
+   - [7.2 Sensor Reading](#72-sensor-reading)  
+   - [7.3 Buffer Update](#73-buffer-update)  
+   - [7.4 Median Calculation (When Buffer is Full)](#74-median-calculation-when-buffer-is-full)  
+   - [7.5 Buzzer Control Logic](#75-buzzer-control-logic)  
+   - [7.6 Bluetooth and LCD Output](#76-bluetooth-and-lcd-output)  
+8. [Optimization Notes](#8-optimization-notes)
+
 ## 1. Libraries and Sensor Setup
 
 This project utilizes the following libraries:
