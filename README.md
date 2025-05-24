@@ -1,4 +1,12 @@
 # Arduino Healthcare Monitoring System — Code Documentation
+This project is a real-time **healthcare monitoring system** built using an Arduino Uno, designed to measure and report two critical health metrics:
+
+- **Body Temperature** using the MAX30205 precision sensor.
+- **Heart Rate (BPM)** using a pulse sensor.
+
+The system includes a **passive buzzer for health alerts**, a **16x2 I2C LCD for local display**, and **Bluetooth communication (HC-05)** to send updates to a connected device (like a smartphone or PC). It employs **median filtering** and **outlier rejection** to ensure reliable measurements, and allows users to control alert modes via Bluetooth commands.
+
+The code is optimized for performance using **low-level I2C communication** and **direct port manipulation**, making it suitable for healthcare-related embedded projects where reliability and response time are critical.
 
 ## 📑 Table of Contents
 
